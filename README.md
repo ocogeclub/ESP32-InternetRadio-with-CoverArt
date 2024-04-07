@@ -1,8 +1,8 @@
 # ESP32-InternetRadio-with-CoverArt
 
-**ESP32-S3 Internet Radio Receiver with Cover Art Display**
+**ESP32-S3 Internet Radio Receiver with Cover Art**
 
-ESP32 を使ったインターネットラジオレシーバにカバーアートを表示させるための最小限のサンプルコードです。PlatformIO のプロジェクトになっています。ESP32 はマルチコア・PSRAM搭載の機種である必要があります。
+ESP32 を使ったインターネットラジオレシーバにカバーアートを表示させるための最小限のサンプルコードです。PlatformIO のプロジェクトになっています。ESP32 はデュアルコア・PSRAM搭載の機種である必要があります。
 
 カバーアートの検索・取得には iTunes Search API を利用します。また、ストリーム再生中に HTTP アクセスをすると音飛びが発生するため、カバーアート取得部を別タスク化しコア０で動かすことで回避しています。
 
